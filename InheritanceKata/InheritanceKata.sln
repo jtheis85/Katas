@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceKata", "InheritanceKata\InheritanceKata.csproj", "{600410E4-A3EA-413E-81A8-4F56D63A5B49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceTests", "InheritanceTests\InheritanceTests.csproj", "{7EB42CEB-7978-46BE-96C4-66BD181AD60B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{600410E4-A3EA-413E-81A8-4F56D63A5B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{600410E4-A3EA-413E-81A8-4F56D63A5B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{600410E4-A3EA-413E-81A8-4F56D63A5B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{600410E4-A3EA-413E-81A8-4F56D63A5B49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EB42CEB-7978-46BE-96C4-66BD181AD60B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EB42CEB-7978-46BE-96C4-66BD181AD60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EB42CEB-7978-46BE-96C4-66BD181AD60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EB42CEB-7978-46BE-96C4-66BD181AD60B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
