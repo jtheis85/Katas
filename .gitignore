@@ -28,3 +28,4 @@ _ReSharper*/
 *.vssscc
 $tf*/
 Javascript/.idea/workspace.xml
+node_modules
