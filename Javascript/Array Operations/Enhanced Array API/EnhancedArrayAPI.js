@@ -1,14 +1,13 @@
 var expect = require('expect');
 
+// Slice operations
 Array.prototype.clone = function() {
     // This is equivalent to slice(0, this.length);
     return this.slice();
 };
-
 Array.prototype.tail = function(count) {
     return this.slice(arr.length - count);
 };
-
 Array.prototype.head = function(count) {
     return this.slice(0, count);
 };
@@ -17,6 +16,21 @@ Array.prototype.inner = function(first, last) {
 };
 Array.prototype.bracket = function(fromBeginning, fromEnd) {
     return this.slice(fromBeginning, -1 * fromEnd);
+};
+
+// Insert a single item
+Array.prototype.insert = function(index, item) {
+    // default to 0
+    index = index || 0;
+
+    this.splice(index, 0, item);
+};
+
+// Remove one item and return it
+Array.prototype.removeAt = function(index) {
+    // Start at index
+    var values = this.splice(index, 1);
+    return values.length > 0 ? values[0] : null;
 };
 
 var value;
@@ -61,3 +75,12 @@ expect(value.length).toBe(0);
 
 value = arr.bracket(1,4);
 expect(value.length).toBe(0);
+
+arr = [1,2,3,4];
+arr.insert(1, 10);
+expect(arr).toEqual([1,10,2,3,4]);
+
+arr = [1,2,3,4];
+value = arr.removeAt(2);
+expect(arr).toEqual([1,2,4]);
+expect(value).toBe(3);
