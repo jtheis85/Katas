@@ -4,5 +4,11 @@
   "dependencies": {
     "react": "0.14.3",
     "react-dom": "0.14.3"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0"
+  },
+  "scripts": {
+    "build": "browserify Main.js -o bundle.js"
   }
 }

@@ -6,7 +6,7 @@ var ReactDOM = require('react-dom');
 var MainElement = React.createClass({
     displayName: "MainElement",
     render: function render() {
-        return React.createElement("div", null, "Hello Joe");
+        return React.createElement("div", null, "Hello Joe!");
     }
 });
 
